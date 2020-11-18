@@ -1,0 +1,137 @@
+@import '../../../index'
+    
+.CreateAnAccountPageContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+    height: 100vh
+    background-color: $faded-base-color
+
+.CreateAccountForm
+    margin-bottom: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+    background-color: $subtle-offwhite-coloring
+    padding: 60px
+    border-radius: 4px
+    box-shadow: 0px 8px 16px 0px #0000005e
+
+.FormField
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+.Field
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 150px 300px
+    gap: 30px
+    text-align: right
+    align-items: center
+
+.Label
+    font-size: 20px
+    user-select: none
+
+.Input
+    border-radius: 8px
+    border: none
+    outline: none
+    height: 35px
+    font-size: 20px
+    font-family: 'Open Sans'
+    border: 2px solid grey
+    padding-left: 10px
+
+.PasswordInput
+    border-radius: 8px
+    border: none
+    outline: none
+    height: 35px
+    font-size: 20px
+    font-family: 'Open Sans'
+    border: 2px solid grey
+    padding-left: 10px
+    padding-right: 40px
+
+.Input:focus
+    border: 2px solid $active-color
+    
+.Password
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 150px 300px
+    gap: 30px
+    text-align: right
+    align-items: center
+
+.ShowIcon
+    position: absolute
+    margin-left: 442px
+    margin-top: 4px
+    padding: 8px
+    color: grey
+    border-radius: 20px
+
+.ShowIcon:hover
+    cursor: pointer
+    color: $active-color
+    background-color: #e9e9e9
+
+.ShowIcon:active
+    background-color: #dbdbdb
+
+.ShowIconActive
+    background-color: #eeeeee
+    color: $base-color
+
+.BackButton
+    margin-right: auto
+    width: 110px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+
+.BackButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.BackButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.SubmitButton
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-left: auto
+    width: 130px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    color: $subtle-offwhite-coloring
+    background-color: $base-color
+
+.SubmitButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+
+.SubmitButton:active
+    background-color: $active-color

@@ -1,0 +1,80 @@
+@import '../../../index'
+
+.ForgotFieldsContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-right: 70px
+
+.Field
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 150px 300px
+    gap: 30px
+    text-align: right
+    align-items: center
+    margin-right: 35px
+
+.Input
+    border-radius: 8px
+    border: none
+    outline: none
+    height: 35px
+    font-size: 20px
+    font-family: 'Open Sans'
+    border: 2px solid grey
+    padding-left: 10px
+
+.Label
+    font-size: 20px
+    user-select: none
+    font-family: 'Open Sans'
+    color: grey
+
+
+.ForgotButton
+    width: 100px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+    margin-top: 5px
+
+.ForgotButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.ForgotButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.ForgotPasswordButton
+    width: 200px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+    margin-top: 20px
+
+.ForgotPasswordButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.ForgotPasswordButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring

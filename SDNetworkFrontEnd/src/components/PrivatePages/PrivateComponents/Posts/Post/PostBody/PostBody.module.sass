@@ -1,0 +1,88 @@
+@import '../../../../../../index'
+    
+.PostBodyContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.PostBody
+    padding: 15px
+    text-align: left
+    font-size: 20px
+    max-width: 500px
+    min-width: 500px
+    overflow-wrap: break-word
+
+.PostButtonsContainer
+    display: grid
+    grid-template-columns: 150px auto 100px 100px
+    grid-template-rows: 1fr
+    align-content: center
+    width: 100%
+    gap: 10px
+    margin: 10px 0
+
+.Likes
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 10px
+    border-bottom: 2px solid lightgrey
+    text-align: left
+    border-radius: 4px
+    width: auto
+    margin-left: 20px
+    font-size: 20px
+
+.LikeButton
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 2px solid $base-color
+    color: $base-color
+    width: 75px
+    height: 30px
+    border-radius: 4px
+    outline: none
+    font-family: 'Open Sans'
+    font-size: 20px
+    background-color: white
+    user-select: none
+
+.LikeButton:hover
+    background-color: $hover-color
+    color: white
+    cursor: pointer
+
+.LikeButton:active
+    background-color: $active-color
+
+.ViewButton
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 2px solid $base-color
+    color: $base-color
+    width: 75px
+    height: 30px
+    border-radius: 4px
+    outline: none
+    font-family: 'Open Sans'
+    font-size: 20px
+    background-color: white
+    user-select: none
+
+.ViewButton:hover
+    background-color: $hover-color
+    color: white
+    cursor: pointer
+
+.ViewButton:active
+    background-color: $active-color
+
+

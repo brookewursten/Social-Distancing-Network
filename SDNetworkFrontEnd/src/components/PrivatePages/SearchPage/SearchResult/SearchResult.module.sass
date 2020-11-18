@@ -1,0 +1,39 @@
+@import '../../../../index'
+
+.SearchResult
+    width: 200px
+    box-sizing: border-box
+
+
+.SearchResult:hover
+    transform: scale(1.01)
+    cursor: pointer
+    background-color: $faded-base-color
+    border-radius: 6px
+    color: white
+
+.SearchResult:active
+    transform: scale(.99)
+
+.ImageContainer
+    margin: 20px
+    margin-bottom: 5px
+    border: 2px solid black
+    background-color: black
+    border-radius: 4px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    
+
+.Image
+    width: 100%
+    object-fit: cover
+
+.NameContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 5px

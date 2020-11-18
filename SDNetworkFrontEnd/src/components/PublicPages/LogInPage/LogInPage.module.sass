@@ -1,0 +1,138 @@
+@import '../../../index'
+
+.LogInPageContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+    height: 100vh
+    background-color: $faded-base-color
+
+.Controls
+    background-color: $subtle-offwhite-coloring
+    border: 2px solid black
+    padding: 50px
+    border-radius: 4px
+    box-shadow: 0px 8px 16px 0px #0000005e
+    margin-bottom: 300px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 50px
+
+.UsernameAndPasswordFieldsContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+.Field
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 150px 300px
+    gap: 30px
+    text-align: right
+    align-items: center
+    margin-right: 35px
+
+.Input
+    border-radius: 8px
+    border: none
+    outline: none
+    height: 35px
+    font-size: 20px
+    font-family: 'Open Sans'
+    border: 2px solid grey
+    padding-left: 10px
+
+.Label
+    font-size: 20px
+    user-select: none
+
+.BackButton
+    margin-right: auto
+    width: 110px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+
+.BackButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.BackButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.LogInButton
+    width: 200px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+    margin-top: 20px
+
+.LogInButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.LogInButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.InvalidMessage
+    position: absolute
+    margin-bottom: -160px
+
+.Password
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 150px 300px
+    gap: 30px
+    text-align: right
+    align-items: center
+
+.ShowIcon
+    position: absolute
+    margin-left: 442px
+    margin-top: 4px
+    padding: 8px
+    color: grey
+    border-radius: 20px
+
+.ShowIcon:hover
+    cursor: pointer
+    color: $active-color
+    background-color: #e9e9e9
+
+.ShowIcon:active
+    background-color: #dbdbdb
+
+.ShowIconActive
+    background-color: #eeeeee
+    color: $base-color
+
+.LowerButtons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 30px

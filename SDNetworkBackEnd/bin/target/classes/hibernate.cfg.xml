@@ -1,0 +1,40 @@
+<!DOCTYPE hibernate-configuration PUBLIC 
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+		<property name="hibernate.connection.username">sdnetwork</property>
+		<property name="hibernate.connection.password">gottagofast</property>
+		<property name="hibernate.connection.url">
+			jdbc:postgresql://training-db1.cwxetsceaaf2.us-east-2.rds.amazonaws.com:5432/sd_network
+		</property>
+		<property name="hibernate.connection.driver.class">org.postgresql.Driver</property>
+		<property name="hibernate.default_schema">public</property><!-- public is default already -->
+		<!-- additional hibernate configurations below -->
+
+		<!-- hibernate should detect this automatically, but good to put it anyways -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- if hibernate should print the sql queries to the console or log file 
+			if configured (good for dev) -->
+		<property name="hibernate.connection.show_sql">true</property>
+		<!-- this is an option for if you want hibernate to make the printed sql 
+			pretty -->
+		<property name="hibernate.connection.format_sql">true</property>
+		<!-- this is the connection pool size for hibernate -->
+		<property name="hibernate.connection.pool_size">10</property>
+		<!-- hibernate mapping to data definition language 
+			create					will drop your tables upon startup and create them all again
+			create-drop				will drop your tables if something goes wrong causing the program to stop.
+			update					will update the tables if something in the mappings changes
+			none					will not affect the tables at all, no ddl.
+		-->
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<mapping class="com.sdnetwork.model.User"/>
+		<mapping class="com.sdnetwork.model.Post"/>
+		<mapping class="com.sdnetwork.model.Like"/>
+	</session-factory>
+
+
+</hibernate-configuration>

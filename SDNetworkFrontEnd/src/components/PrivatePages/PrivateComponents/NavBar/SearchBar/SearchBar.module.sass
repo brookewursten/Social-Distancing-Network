@@ -1,0 +1,47 @@
+@import '../../../../../index'
+    
+.SearchBarContainer
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 15px
+
+.SearchInput
+    height: 25px
+    border-radius: 4px
+    width: 300px
+    font-family: 'Open Sans'
+    font-size: 18px
+    padding-left: 5px
+    border: 1px solid $subtle-offwhite-coloring
+    outline: none
+
+.SearchButton
+    height: 25px
+    width: 70px
+    border: 2px solid $subtle-offwhite-coloring
+    border-radius: 4px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: white
+    outline: none
+    user-select: none
+    background-color: $subtle-offwhite-coloring
+
+.SearchButton:hover, .SearchButton:hover .SearchButtonIcon
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+    cursor: pointer
+
+.SearchButton:active, .SearchButton:active .SearchButtonIcon
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.SearchButtonIcon
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: $base-color

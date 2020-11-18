@@ -1,0 +1,39 @@
+@import '../../../../../index'
+    
+.FriendSquare
+    width: 60px
+    height: 90px
+    padding: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.FriendSquare:hover
+    transform: scale(1.05)
+    cursor: pointer
+    background-color: $faded-base-color
+    border-radius: 6px
+    color: white
+
+.FriendSquare:active
+    transform: scale(1.02)
+
+.ProfilePicContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 2px solid black
+    border-radius: 4px
+    width: 60px
+    height: 60px
+    background-color: black
+
+.ProfilePic
+    object-fit: contain
+    width: 100%
+    height: 100%
+
+.NameContainer
+    font-size: 14px

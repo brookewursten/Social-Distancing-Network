@@ -1,0 +1,151 @@
+@import '../../../index'
+    
+.SettingsPage
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+    margin-top: 30px
+
+.Form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+.ProfilePicture
+    border: 2px solid black
+    border-radius: 4px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: black
+    margin-left: 80px
+
+.Section2
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+    justify-items: center
+    gap: 30px
+    border-bottom: 2px solid lightgrey
+    padding: 30px
+    margin-bottom: 30px
+
+.Section3
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    justify-items: center
+    gap: 30px
+    border-bottom: 2px solid lightgrey
+    padding: 30px
+    margin-bottom: 30px
+
+.SectionPic
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 3fr 1fr 1fr
+    justify-items: center
+    gap: 30px
+    border-bottom: 2px solid lightgrey
+    padding: 30px
+    margin-bottom: 30px
+
+.CurrentText
+    text-align: left
+
+.InputField
+    display: grid
+    grid-template-columns: 200px 300px
+    grid-template-rows: 1fr
+    justify-content: center
+    align-items: center
+    text-align: right
+    gap: 30px
+
+.Input
+    border-radius: 8px
+    border: none
+    outline: none
+    height: 35px
+    font-size: 20px
+    font-family: 'Open Sans'
+    border: 2px solid grey
+    padding-left: 10px
+
+.ApplyButton
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 30px
+    border-radius: 8px
+    border: 2px solid $base-color
+    color: $subtle-offwhite-coloring
+    background-color: $base-color
+    margin-left: 40px
+
+.ApplyButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+
+.ApplyButton:active
+    background-color: $active-color
+
+.BackButton
+    margin-right: 500px
+    width: 110px
+    height: 40px
+    border-radius: 8px
+    border: 2px solid $base-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $subtle-offwhite-coloring
+    color: $base-color
+
+.BackButton:hover
+    user-select: none
+    cursor: pointer
+    background-color: $hover-color
+    color: $subtle-offwhite-coloring
+
+.BackButton:active
+    background-color: $active-color
+    color: $subtle-offwhite-coloring
+
+.ShowIcon
+    position: absolute
+    margin-left: 492px
+    margin-top: 4px
+    padding: 8px
+    color: grey
+    border-radius: 20px
+
+.ShowIcon:hover
+    cursor: pointer
+    color: $active-color
+    background-color: #e9e9e9
+
+.ShowIcon:active
+    background-color: #dbdbdb
+
+.ShowIconActive
+    background-color: #eeeeee
+    color: $base-color
+
+.BottomSpacer
+    margin-top: 700px
+
+.successMessage
+    color: green
+    margin-top: -50px
+    margin-left: 175px
+    position: absolute
