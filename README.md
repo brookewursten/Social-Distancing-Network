@@ -9,7 +9,7 @@ The Front End is a Typescript React App. It is structured in a granular way, wit
 
 The Back End is a Java Spring application. There are three models: User, Post, and Like. Hibernate is used to automatically generate the DDL necessary to model our objects in the database layer. The database used is PostgreSQL, hosted on AWS RDS. The Back End makes use of Spring MVC to provide several endpoints to the front end. An Image Upload Controller is also used to allow the user to upload images when creating a post, or to update their profile picture.
 
-##Features
+## Features
 ### Creating A New Account
 ![](SDNetwork_Photos/creating_an_account.jpg)
 
